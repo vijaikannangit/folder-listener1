@@ -3,7 +3,8 @@ on:
   push:
     branches:
       - main          # Can be changed to master
-      - feature/test  # Can be changed to your feature branch for tests
+      #- feature/test  # Can be changed to your feature branch for tests
+      - feature  # Can be changed to your feature branch for tests
 
 jobs:
   folder-listener:
