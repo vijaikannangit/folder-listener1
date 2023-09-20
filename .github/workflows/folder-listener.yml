@@ -76,7 +76,7 @@ jobs:
             This is an automated email. If you have questions about the above, please email to service@alvdigital.com
 
             <p>
-            Hi <b>${{ github.actor }}</b>  <br><br>
+            Hi <b>${{ github.actor }}</b>,  <br><br>
            
             You committed to master. <br><br>
             
