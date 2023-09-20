@@ -56,7 +56,7 @@ jobs:
           # Optional (recommended) mail server username:
           username: "vijaik.nd@gmail.com" #${{env.NOTIFICATION_SMTP_USER}}
           # Optional (recommended) mail server password:
-          password: "neverforget@1205" #${{env.NOTIFICATION_SMTP_PASSWORD}}
+          password: "wjpo vmsr iqql kkeh" #${{env.NOTIFICATION_SMTP_PASSWORD}}
           # Required mail subject:
           subject: ${{ env.NOTIFICATION_SUBJECT }}
           # Required recipients addresses:
