@@ -13,8 +13,8 @@ jobs:
         NOTIFICATION_SMTP_PASSWORD: ${{secrets.SMTP_PASSWORD}}
         NOTIFICATION_FROM: ALVDIGITAL Systems (API)
         NOTIFICATION_SUBJECT: ALV API Controllers-GitHub Updated
-        NOTIFICATION_TO_DEFAULT: kumvijaya@gmail.com # service@alvdigital.com
-        NOTIFICATION_EMAIL_RECIPIENTS: service@alvdigital.com,kumvijaya@gmail.com
+        NOTIFICATION_TO_DEFAULT: vijaik.nd@gmail.com, vishali.nagathevan@gmail.com #kumvijaya@gmail.com # service@alvdigital.com
+        NOTIFICATION_EMAIL_RECIPIENTS: vijaik.nd@gmail.com, vishali.nagathevan@gmail.com #service@alvdigital.com,kumvijaya@gmail.com
     steps:
       - uses: actions/checkout@v3
           
@@ -36,6 +36,9 @@ jobs:
             commit_id=$(git log --format="%H" -n 1 ${file})
             commit_comment=$(git log -1 --pretty=%B ${file})
             commit_comment=$(echo "${commit_comment//$'\n'/<br />}")
+            #Vijai commit_comment=$(git log --pretty=full ${file})
+            commit_comment=$(echo "${commit_comment//$'\n'/<br />}")
+
             files_changed_html="${files_changed_html}<b>${file}</b><br><i>Commit</i>: ${commit_id}<br>${commit_comment}<br><br>"
           done
           echo "files_changed_html=$files_changed_html" >> $GITHUB_OUTPUT
