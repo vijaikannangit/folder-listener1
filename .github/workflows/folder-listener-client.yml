@@ -27,8 +27,10 @@ jobs:
 
       - name: List all changed files
         id: change-info
+         
         if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
+          'echo "Inside if"'
           files_changed_html=''
           for file in ${{ steps.changed-files-specific.outputs.all_changed_files }}; do
             echo "$file was changed"
