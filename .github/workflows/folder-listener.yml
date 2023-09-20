@@ -75,6 +75,7 @@ jobs:
             <br>
             This is an automated email. If you have questions about the above, please email to service@alvdigital.com
 
+            </pre>
             Hi <b>${{ github.actor }}</b>
 
             You committed to master.
@@ -92,6 +93,8 @@ jobs:
             WHAT IMAGE ... NEED TO DISCUSS WITH VK
 
             Please do this now!
+            </pre>
+            
           # Optional priority: 'high', 'normal' (default) or 'low'
           priority: high
           # Optional HTML body read from file:
