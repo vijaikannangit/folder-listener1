@@ -74,6 +74,24 @@ jobs:
             ${{ steps.change-info.outputs.files_changed_html }}
             <br>
             This is an automated email. If you have questions about the above, please email to service@alvdigital.com
+
+            Hi <b>${{ github.actor }}</b>
+
+            You committed to master.
+
+            Do not forget to:
+
+            - inform your colleagues in the Skype "New on Live" group
+            - create a Help Center ticket in Jira (usually required)
+            - create a GI ticket in Jira (usually required)
+
+            To create tickets in Jira, from within the ALVCODE project, please use the
+            Automation Action on the right "Create Help Center / GI tickets" as shown
+            below:
+            
+            WHAT IMAGE ... NEED TO DISCUSS WITH VK
+
+            Please do this now!
           # Optional priority: 'high', 'normal' (default) or 'low'
           priority: high
           # Optional HTML body read from file:
