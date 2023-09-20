@@ -56,9 +56,9 @@ jobs:
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
           # Optional (recommended) mail server username:
-          username: "vijaik.nd@gmail.com" #${{env.NOTIFICATION_SMTP_USER}}
+          username: ${{env.NOTIFICATION_SMTP_USER}} #"vijaik.nd@gmail.com"
           # Optional (recommended) mail server password:
-          password: "wjpo vmsr iqql kkeh" #${{env.NOTIFICATION_SMTP_PASSWORD}}
+          password: ${{env.NOTIFICATION_SMTP_PASSWORD}} #"wjpo vmsr iqql kkeh"
           # Required mail subject:
           subject: ${{ env.NOTIFICATION_SUBJECT }}
           # Required recipients addresses:
