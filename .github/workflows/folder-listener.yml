@@ -1,6 +1,7 @@
 name: Folder Listener
 on:
   push:
+  pull_request:
     branches:
       - main          # Can be changed to master
       #- feature/test  # Can be changed to your feature branch for tests
