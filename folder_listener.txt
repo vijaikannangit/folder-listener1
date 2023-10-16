@@ -1,0 +1,34 @@
+git show --format=full [hash|HEAD] - multiline message
+git log | less - less message
+git log --pretty=full -- full commit message
+
+
+
+api_mail
+wjpo vmsr iqql kkeh
+
+
+git config user.name
+git config user.email
+
+
+From the git manual, you can get the username and email of the user who made the last commit by running:
+
+git log -n 1 --pretty=format:%an    # username
+git log -n 1 --pretty=format:%ae    # email
+
+Email with Github
+          username: ${{env.NOTIFICATION_SMTP_USER}} #"vijaik.nd@gmail.com"
+          # Optional (recommended) mail server password:
+          password: ${{env.NOTIFICATION_SMTP_PASSWORD}} #"wjpo vmsr iqql kkeh"
+
+
+https://youtu.be/vATxQ863wIs?si=4D3kyEKK9hPUG45H
+https://answers.microsoft.com/en-us/windows/forum/all/microsoft-expression-web-4-download/e6a4eba5-2d7e-4eed-8fab-c945a83215c4
+https://microsoft-expression-web.en.uptodown.com/windows/download
+
+
+#attachments.zip,git.diff,./dist/static/*.js  
+
+https://github.com/vijaikannangit/alv/blob/main/.github/workflows/create-tickets.png
+             
